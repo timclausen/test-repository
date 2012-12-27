@@ -1,0 +1,123 @@
+/*
+Theme Name: Numbers Academy by Pixel Juice
+Theme URI: http://numbers-academy-game.com
+Author: Dife v/ Tim Clausen
+Author URI: http://dife.dk
+Description: The 2012 theme for Numbers Academy Game.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* =Structure
+----------------------------------------------- */
+
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('fonts/cabin-regular.eot');
+    src: url('fonts/cabin-regular.eot') format('embedded-opentype'),
+         url('fonts/cabin-regular.woff') format('woff'),
+         url('fonts/cabin-regular.ttf') format('truetype'),
+         url('fonts/cabin-regular.svg#CabinRegular') format('svg');
+}
+
+body { background-color: #000; min-width: 1200px; }
+#header { width: 100%; height: 252px; background: url(images/header-repeat.png) repeat-x 0 0; margin: 0 auto; }
+.inner_header { width: 1200px; margin: 0 auto; }
+.logo { padding: 30px 0px 0px 96px; }
+
+#featured { width: 100%; height: 360px; background: url(images/featured-repeat.png) repeat 0 0; }
+.inner_featured { width: 100%; height: 360px; margin: 0 auto; background: url(images/featured.jpg) no-repeat center 0; }
+.content_featured { width: 1000px; height: 360px; margin: 0 auto; position: relative; }
+span.red-pow { position: absolute; top: -94px; left: 223px; z-index: 3; }
+.devices { position: absolute; top: -220px; right: 0px; z-index: 2; }
+
+.content_featured ul.btns { padding: 57px 0px 0px 0px; }
+.content_featured ul.btns li { margin-bottom: 6px; }
+
+.content_featured ul.social { padding: 7px 0px 0px 0px; }
+.content_featured ul.social li { float: left; margin-right: 26px; }
+.content_featured ul.social li a { width: 51px; height: 51px; display: block; }
+.content_featured ul.social li a.share-facebook { background: url(images/social-btns.png) no-repeat 0 0; }
+.content_featured ul.social li a.share-twitter { background: url(images/social-btns.png) no-repeat -51px 0; }
+.content_featured ul.social li a.share-tumbler { background: url(images/social-btns.png) no-repeat -102px 0; }
+
+#content { width: 100%; min-height: 500px; height: auto; padding-bottom: 25px; background: #0075de url(images/content-repeat.png) repeat-x 0 0; margin: 0 auto; }
+.inner_content { width: 950px; height: auto; min-height: 500px; margin: 0 auto; background: #f4faff url(images/innercontent-repeat.png) repeat-x 0 0; }
+h2 { width: 931px; height: 43px; font-family: 'CabinRegular'; font-size: 35px; color: #000; padding: 8px 0px 0px 19px; background: #e9eaec; margin-top: 35px; margin-bottom: 35px; clear: both; }
+h2.first { background: none; margin-top: 0px; }
+p { font-family: 'Arial'; font-size: 1em; line-height: 24px; color: #000; padding: 0px 50px 30px 50px; }
+
+.features_p { width: 450px; float: left; padding: 0px 0px 30px 50px; }
+.inner_content .features_ul { width: 450px; float: right; margin-bottom: 20px; }
+.inner_content .features_ul li { padding: 0px 60px 0px 90px; margin-bottom: 4px; }
+
+.inner_content ul li { font-family: 'Arial'; font-size: 1em; line-height: 24px; color: #000; padding: 0px 60px 0px 145px; background: url(images/list-type.png) no-repeat 70px 9px; }
+.youtubevideo { margin: 0 auto; width: 850px; display: block; }
+.shadow { -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
+.footer { width: 800px; height: 50px; color: #000; background: #e9eaec; margin-top: 35px; margin-bottom: 35px; }
+.lightbox { text-align: center; }
+a.screenshots { width: 165px; height: 239px; margin: 0px 1px; display: inline-block; padding-top: 5px; background: #cbd0d4; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+.footer { width: 850px; padding: 0px 50px; position: relative; font-family: 'Arial'; font-size: 13px; color: #f7931e; }
+.footer .pj-logo { display: block; padding-top: 9px; float: left; padding-right: 3px; }
+.footer a.nav { font-family: 'Arial'; font-size: 13px; color: #f7931e; line-height: 74px; text-decoration: none; }
+.footer .footer-info { position: absolute; font-family: 'Arial'; font-size: 11px; font-weight: bold; color: #000; line-height: 75px; right: 75px; top: 0px; }
+
+
